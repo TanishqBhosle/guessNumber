@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Guess the Number</h1>
+        <p>Pick a number 1 to 100</p>
+        
+        <div id="modeSelection">
+            <button id="singlePlayerBtn">Single Player</button>
+            <button id="multiPlayerBtn">Multiplayer</button>
+        </div>
+        
+        <div id="playerNames" style="display:none;">
+            <input type="text" id="player1" placeholder="Player 1 Name">
+            <input type="text" id="player2" placeholder="Player 2 Name" style="display:none;">
+        </div>
+
+        <div id="gameSection" style="display:none;">
+            <p>It's <span id="currentPlayer">Player 1's</span> turn.</p>
+            <input type="number" id="input" placeholder="Enter your guess">
+            <button id="submit">Guess!</button>
+            <button id="backBtn">Back</button>
+            <button id="resBtn" style="display:none;">Restart</button>
+            <p>Attempts: <span id="Attempt">0</span></p>
+            <p id="msg"></p>
+        </div>
+    </div>
+    <div id="ribbons"></div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
